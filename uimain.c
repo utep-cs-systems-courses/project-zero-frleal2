@@ -29,10 +29,10 @@ int main()
       for (char c = 'A'; c < 'D'; c++)
 	print_char_11x16(c);
       break;
-    case 'd':
+    case 'd': // given this command the programm will print chars A - C in font 8x12
       puts("You selected a custom font chars");
-      for(char c = 'A'; c< 'D'; c++)
-	print_char_8x12(c);
+      for(char c = 'A'; c< 'D'; c++)// print chars from A to C
+	print_char_8x12(c); //this command is external to another file
       break;
     case 'a':
       puts("You selected arrow"); //given this command the program will print an arrow

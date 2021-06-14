@@ -25,4 +25,28 @@ void print_triangle(int leftCol, int size)
     putchar('\n');
   }
 }
+// Prints a default arrow created by Felipe Leal
+void print_arrow()
+{
+  for ( int i = 1; i <= 7 ; i++){
+    for( int j = 1; j <= 4 ; j++){
+      if(i<= 3){
+	if(i== 5-j)
+	  putchar('*');
+	else
+	  putchar(' ');
+      }
+      else if(i == 4)
+	putchar('*');
+      else{
+	if(i==3 + j)
+	  putchar('*');
+	else
+	  putchar(' ');
+      }
+    }
+    putchar('\n');
+  }
+}
+      
 
